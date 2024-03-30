@@ -11,9 +11,9 @@ terraform {
   }
   backend "s3" {
     # Replace this with your bucket name!
-    bucket = "devsecopsb36-tfstate"
-    key    = "global/s3/terraform.tfstate"
-    region = "us-east-2"
+    bucket         = "devsecopsb36-tfstate"
+    key            = "devsecopsb36.tfstate"
+    region         = "us-east-1"
 
     # Replace this with your DynamoDB table name!
     dynamodb_table = "devsecopsb35-state-locking"
