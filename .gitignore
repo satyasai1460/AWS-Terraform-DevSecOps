@@ -5,3 +5,5 @@ terraform.tfstate
 terraform.tfstate.backup
 terraform/*
 terraform
+2AWSB46-KP.pem
+errored.tfstate
