@@ -11,12 +11,12 @@ terraform {
   }
   backend "s3" {
     # Replace this with your bucket name!
-    bucket         = "devsecopsb36-tfstate"
-    key            = "devsecopsb36.tfstate"
-    region         = "us-east-1"
+    bucket = "devsecopsb36-tfstate"
+    key    = "functions.tfstate"
+    region = "us-east-1"
 
     # Replace this with your DynamoDB table name!
-    dynamodb_table = "devsecopsb35-state-locking"
+    dynamodb_table = "devsecopsb36-state-locking"
     encrypt        = true
   }
 }
