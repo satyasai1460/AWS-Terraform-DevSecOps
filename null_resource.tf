@@ -8,7 +8,7 @@ resource "null_resource" "cluster" {
     connection {
       type        = "ssh"
       user        = "ubuntu"
-      private_key = file("2AWSB46-KP.pem")
+      private_key = file("2AWSB46-KPP.pem")
       #host = "${aws_instance.websrvers.public_ip}"
       host = element(aws_instance.websrvers.*.public_ip, count.index)
     }
